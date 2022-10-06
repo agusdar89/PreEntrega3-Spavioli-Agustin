@@ -1,0 +1,133 @@
+//variables
+$sombraNight: 10px 10px 20px rgba(170,170,170,.16);
+$sombraLight: 10px 10px 20px rgba(0,0,0,.16);
+$negro: #111111;
+$blanco: #fefefe;
+$grisOscuro: #222222;
+$grisClaro: #c8c8c8;
+
+
+//Estilos SASS-NightVision
+body {
+    background: #f1f1f1;
+    font-family: 'Lato',sans-serif, serif;
+    transition: .3s ease all;
+    &.night {
+        background: $negro;
+        h1, h2, h3, h4, h5, h6 {
+            color: $blanco;
+        }
+    }
+}
+
+nav {
+    body.night & {
+        background: $grisOscuro !important;
+        box-shadow: $sombraLight !important;
+        a {
+            color: $grisClaro !important;
+            &:hover {
+                color: $blanco !important;
+            }
+        }
+    }
+}
+
+.section__container__articulo {
+    body.night & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+        p {
+            color: $blanco;
+        }
+    }
+}
+
+.container__img__clientes{
+    body.night & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+    }
+}
+
+.container__noticia {
+    body.night & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+    }
+}
+
+.container__links__img {
+    body.night & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+    }
+}
+
+.container__section__nosotros {
+    body.night & {
+        h1, h2, h3, h4, h5, h6, p {
+            color: $blanco;
+        }
+    }
+}
+
+.container__servicios__impositivos, .container__servicios__contables, .container__servicios__laborales {
+    body.night & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+        h1, h2, h3, h4, h5, h6, li {
+            color: $blanco;
+        }
+    }
+}
+
+.container__novedad__img, .container__novedad__titulo, .container__novedad__contenido {
+    body.night & {
+        h1, h2, h3, h4, h5, h6, p {
+            color: $blanco;
+        }
+
+    }
+}
+
+//Boton NightVision
+.switch {
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    }
+    &.active {
+        background: orange;
+        color: #000;
+        &::after {
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
+}

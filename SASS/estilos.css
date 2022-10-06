@@ -1,0 +1,101 @@
+body {
+  background: #f1f1f1;
+  font-family: "Lato", sans-serif, serif;
+  transition: 0.3s ease all;
+}
+body.night {
+  background: #111111;
+}
+body.night h1, body.night h2, body.night h3, body.night h4, body.night h5, body.night h6 {
+  color: #fefefe;
+}
+
+body.night nav {
+  background: #222222 !important;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important;
+}
+body.night nav a {
+  color: #c8c8c8 !important;
+}
+body.night nav a:hover {
+  color: #fefefe !important;
+}
+
+body.night .section__container__articulo {
+  background: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+body.night .section__container__articulo p {
+  color: #fefefe;
+}
+
+body.night .container__img__clientes {
+  background: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+body.night .container__noticia {
+  background: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+body.night .container__links__img {
+  background: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+body.night .container__section__nosotros h1, body.night .container__section__nosotros h2, body.night .container__section__nosotros h3, body.night .container__section__nosotros h4, body.night .container__section__nosotros h5, body.night .container__section__nosotros h6, body.night .container__section__nosotros p {
+  color: #fefefe;
+}
+
+body.night .container__servicios__impositivos, body.night .container__servicios__contables, body.night .container__servicios__laborales {
+  background: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+body.night .container__servicios__impositivos h1, body.night .container__servicios__impositivos h2, body.night .container__servicios__impositivos h3, body.night .container__servicios__impositivos h4, body.night .container__servicios__impositivos h5, body.night .container__servicios__impositivos h6, body.night .container__servicios__impositivos li, body.night .container__servicios__contables h1, body.night .container__servicios__contables h2, body.night .container__servicios__contables h3, body.night .container__servicios__contables h4, body.night .container__servicios__contables h5, body.night .container__servicios__contables h6, body.night .container__servicios__contables li, body.night .container__servicios__laborales h1, body.night .container__servicios__laborales h2, body.night .container__servicios__laborales h3, body.night .container__servicios__laborales h4, body.night .container__servicios__laborales h5, body.night .container__servicios__laborales h6, body.night .container__servicios__laborales li {
+  color: #fefefe;
+}
+
+body.night .container__novedad__img h1, body.night .container__novedad__img h2, body.night .container__novedad__img h3, body.night .container__novedad__img h4, body.night .container__novedad__img h5, body.night .container__novedad__img h6, body.night .container__novedad__img p, body.night .container__novedad__titulo h1, body.night .container__novedad__titulo h2, body.night .container__novedad__titulo h3, body.night .container__novedad__titulo h4, body.night .container__novedad__titulo h5, body.night .container__novedad__titulo h6, body.night .container__novedad__titulo p, body.night .container__novedad__contenido h1, body.night .container__novedad__contenido h2, body.night .container__novedad__contenido h3, body.night .container__novedad__contenido h4, body.night .container__novedad__contenido h5, body.night .container__novedad__contenido h6, body.night .container__novedad__contenido p {
+  color: #fefefe;
+}
+
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: orange;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}/*# sourceMappingURL=estilos.css.map */
