@@ -378,6 +378,14 @@ footer {
     padding: 10px;
 }
 
+.section__container__articulo ul li {
+    color: #777;
+    font-size: 14px;
+    font-weight: 600;
+    list-style: none;
+    text-align: start;
+}
+
 .section__container__titulo h2 {
     font-size: 36px;
     font-weight: 600;

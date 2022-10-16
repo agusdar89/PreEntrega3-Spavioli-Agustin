@@ -25,7 +25,7 @@ body.night .section__container__articulo {
   background: #222222;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
-body.night .section__container__articulo p {
+body.night .section__container__articulo p, body.night .section__container__articulo ul, body.night .section__container__articulo li {
   color: #fefefe;
 }
 

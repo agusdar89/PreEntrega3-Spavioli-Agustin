@@ -37,7 +37,7 @@ nav {
     body.night & {
         background: $grisOscuro;
         box-shadow: $sombraLight;
-        p {
+        p, ul, li {
             color: $blanco;
         }
     }
